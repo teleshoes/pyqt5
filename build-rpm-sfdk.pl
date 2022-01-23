@@ -7,6 +7,7 @@ my $SFDK = "$ENV{HOME}/SailfishOS/bin/sfdk";
 my $TARGET = "SailfishOS-4.3.0.12-aarch64";
 
 my $SPEC = "RPM/SPEC/python2-pyqt5.spec";
+my $SIP_PATCH_GLOB = "build-sip-patches/*";
 
 my @PKG_DEPS = qw(
   python
@@ -42,6 +43,19 @@ sub main(@){
   my $rpmName = "$$pkg{name}-$$pkg{version}-$$pkg{release}.$$pkg{arch}";
 
   sfdkCmd "python", "configure.py";
+
+  for my $patch(glob $SIP_PATCH_GLOB){
+    next if not -e $patch;
+
+    my $targetFile = $patch;
+    $targetFile =~ s/^.*\///;
+    $targetFile =~ s/%/\//g;
+    if(not -f $targetFile){
+      die "ERROR: $targetFile for patch $patch does not exist\n";
+    }
+    sfdkCmd "patch -N -i $patch $targetFile";
+  }
+
   sfdkCmd "make", "-j8";
   sfdkCmd "make", "INSTALL_ROOT=/home/mersdk/rpmbuild/BUILDROOT/$rpmName", "install";
   sfdkCmd "rpmbuild", "-bb", $SPEC;
