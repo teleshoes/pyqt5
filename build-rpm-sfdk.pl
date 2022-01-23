@@ -78,6 +78,7 @@ sub getPkgInfo(){
 }
 
 sub sfdkCmd(@){
+  print "\n";
   run($SFDK, "build-shell", @_);
 }
 
