@@ -2454,8 +2454,8 @@ def generate_sip_module_code(target_config, verbose, parts, tracing, mname, fata
         argv.append('-f')
 
     # Make sure any unknown Qt version gets treated as the latest Qt v5.
-    argv.append('-B')
-    argv.append('Qt_6_0_0')
+    #####argv.append('-B')
+    #####argv.append('Qt_6_0_0')
 
     if target_config.prot_is_public:
         argv.append('-P');
