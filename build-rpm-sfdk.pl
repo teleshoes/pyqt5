@@ -58,9 +58,11 @@ sub main(@){
     sfdkCmd "patch -N -i $patch $targetFile";
   }
 
+  my $buildRoot = "/home/mersdk/rpmbuild/BUILDROOT/$rpmName";
+
   sfdkCmd "make", "-j8";
-  sfdkCmd "make", "INSTALL_ROOT=/home/mersdk/rpmbuild/BUILDROOT/$rpmName", "install";
-  sfdkCmd "rpmbuild", "-bb", $SPEC;
+  sfdkCmd "make", "INSTALL_ROOT=$buildRoot", "install";
+  sfdkCmd "rpmbuild", "-bb", "--buildroot=$buildRoot", $SPEC;
   sfdkCmd "cp", "/home/mersdk/rpmbuild/RPMS/$$pkg{arch}/$rpmName.rpm", ".";
 }
 
