@@ -2,11 +2,13 @@
 use strict;
 use warnings;
 
+my $IS_64_BIT = 1;
+my $ARCH = $IS_64_BIT ? "aarch64" : "armv7hl";
+my $SPEC = $IS_64_BIT ? "RPM/SPEC/python2-pyqt5-64bit.spec" : "RPM/SPEC/python2-pyqt5-32bit.spec";
+my $TARGET = "SailfishOS-4.3.0.12-$ARCH";
+
 my $SFDK = "$ENV{HOME}/SailfishOS/bin/sfdk";
 
-my $TARGET = "SailfishOS-4.3.0.12-aarch64";
-
-my $SPEC = "RPM/SPEC/python2-pyqt5-64bit.spec";
 my $SIP_PATCH_GLOB = "build-sip-patches/*";
 
 my @PKG_DEPS = qw(
@@ -14,8 +16,8 @@ my @PKG_DEPS = qw(
   python-devel
 );
 
-my @RPM_DEPS = qw(
-  rpmbuild/RPMS/aarch64/python2-sip-4.19.4-sf0.1.aarch64.rpm
+my @RPM_DEPS = (
+  "rpmbuild/RPMS/$ARCH/python2-sip-4.19.4-sf0.1.$ARCH.rpm",
 );
 
 my @PKG_TOOLS = qw(
