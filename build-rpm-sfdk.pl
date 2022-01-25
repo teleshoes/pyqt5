@@ -6,7 +6,7 @@ my $SFDK = "$ENV{HOME}/SailfishOS/bin/sfdk";
 
 my $TARGET = "SailfishOS-4.3.0.12-aarch64";
 
-my $SPEC = "RPM/SPEC/python2-pyqt5.spec";
+my $SPEC = "RPM/SPEC/python2-pyqt5-64bit.spec";
 my $SIP_PATCH_GLOB = "build-sip-patches/*";
 
 my @PKG_DEPS = qw(
