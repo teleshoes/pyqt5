@@ -44,7 +44,7 @@ sub main(@){
   my $pkg = getPkgInfo();
   my $rpmName = "$$pkg{name}-$$pkg{version}-$$pkg{release}.$$pkg{arch}";
 
-  sfdkCmd "python", "configure.py";
+  sfdkCmd "python", "configure.py", "--confirm-license";
 
   for my $patch(glob $SIP_PATCH_GLOB){
     next if not -e $patch;
