@@ -1,7 +1,7 @@
-*** ./QtGui/Makefile	2022-01-23 14:55:04.626973021 -0500
---- ./QtGui/Makefile	2022-01-23 14:55:23.771919098 -0500
+*** QtGui/Makefile	2022-01-25 11:02:45.624472679 -0500
+--- QtGui/Makefile	2022-01-25 11:05:06.918021326 -0500
 ***************
-*** 527,533 ****
+*** 525,531 ****
   		sipQtGuiQt.o \
   		sipQtGuicmodule.o \
   		qpyopengl_add_constants.o \
@@ -9,17 +9,16 @@
   		qpyopengl_array_convertors.o \
   		qpyopengl_attribute_array.o \
   		qpyopengl_data_cache.o \
---- 527,532 ----
+--- 525,530 ----
 ***************
-*** 2087,2096 ****
-  qpyopengl_add_constants.o: ../qpy/QtGui/qpyopengl_add_constants.c 
-  	$(CC) -c $(CFLAGS) $(INCPATH) -o qpyopengl_add_constants.o ../qpy/QtGui/qpyopengl_add_constants.c
-  
-- qpyopengl_add_constants.o: ../qpy/QtGui/qpyopengl_add_constants.cpp sipAPIQtGui.h \
-- 		../qpy/QtGui/qpyopengl_api.h
-- 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qpyopengl_add_constants.o ../qpy/QtGui/qpyopengl_add_constants.cpp
-- 
-  qpyopengl_array_convertors.o: ../qpy/QtGui/qpyopengl_array_convertors.cpp sipAPIQtGui.h \
+*** 2077,2085 ****
   		../qpy/QtGui/qpyopengl_api.h
-  	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qpyopengl_array_convertors.o ../qpy/QtGui/qpyopengl_array_convertors.cpp
---- 2086,2091 ----
+  	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sipQtGuicmodule.o sipQtGuicmodule.cpp
+  
+- qpyopengl_add_constants.o: ../qpy/QtGui/qpyopengl_add_constants.c 
+- 	$(CC) -c $(CFLAGS) $(INCPATH) -o qpyopengl_add_constants.o ../qpy/QtGui/qpyopengl_add_constants.c
+- 
+  qpyopengl_add_constants.o: ../qpy/QtGui/qpyopengl_add_constants.cpp sipAPIQtGui.h \
+  		../qpy/QtGui/qpyopengl_api.h
+  	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qpyopengl_add_constants.o ../qpy/QtGui/qpyopengl_add_constants.cpp
+--- 2076,2081 ----
