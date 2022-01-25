@@ -1,5 +1,5 @@
 Name:          python2-pyqt5
-BuildArch:     aarch64
+BuildArch:     armv7hl
 Version:       5.6.3
 Release:       sf0.1
 License:       GPLv3
@@ -12,76 +12,73 @@ Provides:      python2-pyqt5=5.6.3-sf0.1
 Provides:      python2-qt5=5.6.3-sf0.1
 Provides:      python-pyqt5=5.6.3-sf0.1
 Provides:      python-qt5=5.6.3-sf0.1
-Provides:      python2-qt5(aarch-64)=5.6.3-sf0.1
 Provides:      python2-PyQt5=5.6.3
 
 Requires:      python2
 Requires:      python2-sip
 Requires:      python2-dbus
-Requires:      ld-linux-aarch64.so.1()(64bit)
-Requires:      libGLESv2.so.2()(64bit)
-Requires:      libQt5Bluetooth.so.5()(64bit)
-Requires:      libQt5Bluetooth.so.5(Qt_5)(64bit)
-Requires:      libQt5Core.so.5()(64bit)
-Requires:      libQt5Core.so.5(Qt_5)(64bit)
-Requires:      libQt5DBus.so.5()(64bit)
-Requires:      libQt5DBus.so.5(Qt_5)(64bit)
-Requires:      libQt5Designer.so.5()(64bit)
-Requires:      libQt5Designer.so.5(Qt_5)(64bit)
-Requires:      libQt5Gui.so.5()(64bit)
-Requires:      libQt5Gui.so.5(Qt_5)(64bit)
-Requires:      libQt5Help.so.5()(64bit)
-Requires:      libQt5Help.so.5(Qt_5)(64bit)
-Requires:      libQt5Location.so.5()(64bit)
-Requires:      libQt5Location.so.5(Qt_5)(64bit)
-Requires:      libQt5Multimedia.so.5()(64bit)
-Requires:      libQt5Multimedia.so.5(Qt_5)(64bit)
-Requires:      libQt5Network.so.5()(64bit)
-Requires:      libQt5Network.so.5(Qt_5)(64bit)
-Requires:      libQt5Nfc.so.5()(64bit)
-Requires:      libQt5Nfc.so.5(Qt_5)(64bit)
-Requires:      libQt5OpenGL.so.5()(64bit)
-Requires:      libQt5OpenGL.so.5(Qt_5)(64bit)
-Requires:      libQt5Positioning.so.5()(64bit)
-Requires:      libQt5Positioning.so.5(Qt_5)(64bit)
-Requires:      libQt5PrintSupport.so.5()(64bit)
-Requires:      libQt5PrintSupport.so.5(Qt_5)(64bit)
-Requires:      libQt5Qml.so.5()(64bit)
-Requires:      libQt5Qml.so.5(Qt_5)(64bit)
-Requires:      libQt5Quick.so.5()(64bit)
-Requires:      libQt5Quick.so.5(Qt_5)(64bit)
-Requires:      libQt5Sensors.so.5()(64bit)
-Requires:      libQt5Sensors.so.5(Qt_5)(64bit)
-Requires:      libQt5Sql.so.5()(64bit)
-Requires:      libQt5Sql.so.5(Qt_5)(64bit)
-Requires:      libQt5Svg.so.5()(64bit)
-Requires:      libQt5Svg.so.5(Qt_5)(64bit)
-Requires:      libQt5Test.so.5()(64bit)
-Requires:      libQt5Test.so.5(Qt_5)(64bit)
-Requires:      libQt5WebKit.so.5()(64bit)
-Requires:      libQt5WebKitWidgets.so.5()(64bit)
-Requires:      libQt5WebKitWidgets.so.5(Qt_5)(64bit)
-Requires:      libQt5WebSockets.so.5()(64bit)
-Requires:      libQt5WebSockets.so.5(Qt_5)(64bit)
-Requires:      libQt5Widgets.so.5()(64bit)
-Requires:      libQt5Widgets.so.5(Qt_5)(64bit)
-Requires:      libQt5Xml.so.5()(64bit)
-Requires:      libQt5Xml.so.5(Qt_5)(64bit)
-Requires:      libQt5XmlPatterns.so.5()(64bit)
-Requires:      libQt5XmlPatterns.so.5(Qt_5)(64bit)
-Requires:      libc.so.6()(64bit)
-Requires:      libc.so.6(GLIBC_2.17)(64bit)
-Requires:      libdbus-1.so.3()(64bit)
-Requires:      libdbus-1.so.3(LIBDBUS_1_3)(64bit)
-Requires:      libgcc_s.so.1()(64bit)
-Requires:      libgcc_s.so.1(GCC_3.0)(64bit)
-Requires:      libpthread.so.0()(64bit)
-Requires:      libpthread.so.0(GLIBC_2.17)(64bit)
-Requires:      libpython2.7.so.1.0()(64bit)
-Requires:      libstdc++.so.6()(64bit)
-Requires:      libstdc++.so.6(CXXABI_1.3)(64bit)
-Requires:      libstdc++.so.6(CXXABI_1.3.9)(64bit)
-Requires:      libstdc++.so.6(GLIBCXX_3.4)(64bit)
+Requires:      libGLESv2.so.2
+Requires:      libQt5Bluetooth.so.5
+Requires:      libQt5Bluetooth.so.5(Qt_5)
+Requires:      libQt5Core.so.5
+Requires:      libQt5Core.so.5(Qt_5)
+Requires:      libQt5DBus.so.5
+Requires:      libQt5DBus.so.5(Qt_5)
+Requires:      libQt5Designer.so.5
+Requires:      libQt5Designer.so.5(Qt_5)
+Requires:      libQt5Gui.so.5
+Requires:      libQt5Gui.so.5(Qt_5)
+Requires:      libQt5Help.so.5
+Requires:      libQt5Help.so.5(Qt_5)
+Requires:      libQt5Location.so.5
+Requires:      libQt5Location.so.5(Qt_5)
+Requires:      libQt5Multimedia.so.5
+Requires:      libQt5Multimedia.so.5(Qt_5)
+Requires:      libQt5Network.so.5
+Requires:      libQt5Network.so.5(Qt_5)
+Requires:      libQt5Nfc.so.5
+Requires:      libQt5Nfc.so.5(Qt_5)
+Requires:      libQt5OpenGL.so.5
+Requires:      libQt5OpenGL.so.5(Qt_5)
+Requires:      libQt5Positioning.so.5
+Requires:      libQt5Positioning.so.5(Qt_5)
+Requires:      libQt5PrintSupport.so.5
+Requires:      libQt5PrintSupport.so.5(Qt_5)
+Requires:      libQt5Qml.so.5
+Requires:      libQt5Qml.so.5(Qt_5)
+Requires:      libQt5Quick.so.5
+Requires:      libQt5Quick.so.5(Qt_5)
+Requires:      libQt5Sensors.so.5
+Requires:      libQt5Sensors.so.5(Qt_5)
+Requires:      libQt5Sql.so.5
+Requires:      libQt5Sql.so.5(Qt_5)
+Requires:      libQt5Svg.so.5
+Requires:      libQt5Svg.so.5(Qt_5)
+Requires:      libQt5Test.so.5
+Requires:      libQt5Test.so.5(Qt_5)
+Requires:      libQt5WebKit.so.5
+Requires:      libQt5WebKitWidgets.so.5
+Requires:      libQt5WebKitWidgets.so.5(Qt_5)
+Requires:      libQt5WebSockets.so.5
+Requires:      libQt5WebSockets.so.5(Qt_5)
+Requires:      libQt5Widgets.so.5
+Requires:      libQt5Widgets.so.5(Qt_5)
+Requires:      libQt5Xml.so.5
+Requires:      libQt5Xml.so.5(Qt_5)
+Requires:      libQt5XmlPatterns.so.5
+Requires:      libQt5XmlPatterns.so.5(Qt_5)
+Requires:      libc.so.6
+Requires:      libc.so.6(GLIBC_2.17)
+Requires:      libdbus-1.so.3
+Requires:      libdbus-1.so.3(LIBDBUS_1_3)
+Requires:      libgcc_s.so.1
+Requires:      libgcc_s.so.1(GCC_3.0)
+Requires:      libpthread.so.0
+Requires:      libpython2.7.so.1.0
+Requires:      libstdc++.so.6
+Requires:      libstdc++.so.6(CXXABI_1.3)
+Requires:      libstdc++.so.6(CXXABI_1.3.9)
+Requires:      libstdc++.so.6(GLIBCXX_3.4)
 
 
 
@@ -91,72 +88,72 @@ framework. The qt4 and qt5 bindings can be co-installed.
 
 
 %files
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/__init__.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/compiler.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/indenter.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/misc.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/proxy_metaclass.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/qobjectcreator.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Compiler/qtproxies.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Loader/__init__.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Loader/loader.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/Loader/qobjectcreator.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/__init__.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/driver.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/exceptions.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/icon_cache.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/objcreator.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/__init__.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/as_string.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/ascii_upper.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/invoke.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/load_plugin.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/proxy_base.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v2/string_io.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/__init__.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/as_string.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/ascii_upper.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/invoke.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/load_plugin.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/proxy_base.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/port_v3/string_io.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/properties.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/pyuic.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/uiparser.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qaxcontainer.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qscintilla.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtcharts.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtdeclarative.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtprintsupport.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtquickwidgets.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtwebengine.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtwebenginewidgets.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/uic/widget-plugins/qtwebkit.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtCore.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtGui.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtMultimedia.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtNetwork.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtOpenGL.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtQml.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtQuick.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtSql.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtWebKit.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtWidgets.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtXml.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtXmlPatterns.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtDBus.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/_QOpenGLFunctions_ES2.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtSensors.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtBluetooth.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtPositioning.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/QtLocation.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/pylupdate.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/pyrcc.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/Qt.so"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/__init__.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/pylupdate_main.py"
-%attr(0644, root, root) "/usr/lib64/python2.7/site-packages/PyQt5/pyrcc_main.py"
-%attr(0755, root, root) "/usr/lib64/qt5/plugins/PyQt5/libpyqt5qmlplugin.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/__init__.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/compiler.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/indenter.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/misc.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/proxy_metaclass.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/qobjectcreator.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Compiler/qtproxies.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Loader/__init__.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Loader/loader.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/Loader/qobjectcreator.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/__init__.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/driver.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/exceptions.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/icon_cache.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/objcreator.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/__init__.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/as_string.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/ascii_upper.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/invoke.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/load_plugin.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/proxy_base.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v2/string_io.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/__init__.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/as_string.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/ascii_upper.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/invoke.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/load_plugin.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/proxy_base.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/port_v3/string_io.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/properties.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/pyuic.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/uiparser.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qaxcontainer.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qscintilla.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtcharts.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtdeclarative.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtprintsupport.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtquickwidgets.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtwebengine.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtwebenginewidgets.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/uic/widget-plugins/qtwebkit.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtCore.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtGui.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtMultimedia.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtNetwork.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtOpenGL.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtQml.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtQuick.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtSql.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtWebKit.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtWidgets.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtXml.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtXmlPatterns.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtDBus.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/_QOpenGLFunctions_ES2.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtSensors.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtBluetooth.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtPositioning.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/QtLocation.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/pylupdate.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/pyrcc.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/Qt.so"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/__init__.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/pylupdate_main.py"
+%attr(0644, root, root) "/usr/lib/python2.7/site-packages/PyQt5/pyrcc_main.py"
+%attr(0755, root, root) "/usr/lib/qt5/plugins/PyQt5/libpyqt5qmlplugin.so"
 %attr(0755, root, root) "/usr/bin/pylupdate5"
 %attr(0755, root, root) "/usr/bin/pyrcc5"
 %attr(0755, root, root) "/usr/bin/pyuic5"
